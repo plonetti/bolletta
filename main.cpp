@@ -4,7 +4,7 @@ La bolletta dell'acqua: fatturare annualmente i consumi di acqua
 #include <iostream>
 
 using namespace std;
-
+// Stampa dati
 void stampaDati(float qtVariabile,float qtFissa,int iva,float totale){
  cout<< "Quota variabile:" << qtVariabile<<endl;
  cout<< "Quota Fissa:" << qtFissa<<endl;
@@ -18,6 +18,7 @@ void calcolaTariffeAziende(float consumo,float tariffa,float qtFissa,int percIva
     float totale=qtVariabile+qtFissa+iva;
     stampaDati(qtVariabile,qtFissa,iva,totale);
 }
+//Calcola tariffa Privati
 void calcolaTariffePrivati(float consumo,int T1_FINOA,int T2_FINOA,float T1,float T2,float T3,float QFPRIVATI,int percIva){
     float qtVariabile;
     if (consumo<=T1_FINOA){
